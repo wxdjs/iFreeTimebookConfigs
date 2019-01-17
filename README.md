@@ -39,5 +39,9 @@
 | 11 |55小说网   |2019-01-01 20:35:54   |[导入](ifreetime://configs/https://raw.githubusercontent.com/wxdjs/iFreeTimebookConfigs/master/55%E5%B0%8F%E8%AF%B4%E7%BD%91-%E7%88%B1%E9%98%85%E4%B9%A6%E9%A6%99.txt)   |
 | 12 |2K小说阅读网   |2019-01-08 16:42:06   |[导入](ifreetime://configs/https://raw.githubusercontent.com/wxdjs/iFreeTimebookConfigs/master/2K%E5%B0%8F%E8%AF%B4%E9%98%85%E8%AF%BB%E7%BD%91-%E7%88%B1%E9%98%85%E4%B9%A6%E9%A6%99.txt)   |
 | 13 |思路客   |2019-01-03 09:00:58   |[导入](ifreetime://configs/https://raw.githubusercontent.com/wxdjs/iFreeTimebookConfigs/master/%E6%80%9D%E8%B7%AF%E5%AE%A2-%E7%88%B1%E9%98%85%E4%B9%A6%E9%A6%99.txt)   |
+| 14 |斋书苑   |2019-01-17 16:23:30   |[导入](ifreetime://configs/https://raw.githubusercontent.com/wxdjs/iFreeTimebookConfigs/master/%E6%96%8B%E4%B9%A6%E8%8B%91-%E7%88%B1%E9%98%85%E4%B9%A6%E9%A6%99.txt)   |
+| 15 |云来阁小说   |2019-01-03 22:08:14   |[导入](ifreetime://configs/https://raw.githubusercontent.com/wxdjs/iFreeTimebookConfigs/master/%E4%BA%91%E6%9D%A5%E9%98%81%E5%B0%8F%E8%AF%B4-%E7%88%B1%E9%98%85%E4%B9%A6%E9%A6%99.txt)   |
+| 16 |梧州中文网   |2019-01-01 18:45:57   |[导入](ifreetime://configs/https://raw.githubusercontent.com/wxdjs/iFreeTimebookConfigs/master/%E6%A2%A7%E5%B7%9E%E4%B8%AD%E6%96%87%E7%BD%91-%E7%88%B1%E9%98%85%E4%B9%A6%E9%A6%99.txt)   |
+| 17 |雅文小说   |2019-01-03 21:24:59   |[导入](ifreetime://configs/https://raw.githubusercontent.com/wxdjs/iFreeTimebookConfigs/master/%E9%9B%85%E6%96%87%E5%B0%8F%E8%AF%B4-%E7%88%B1%E9%98%85%E4%B9%A6%E9%A6%99.txt)   |
 |结束|
 
