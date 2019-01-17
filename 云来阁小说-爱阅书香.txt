@@ -1,0 +1,221 @@
+{
+  "homeUrl" : "http:\/\/www.yunlaige.com",
+  "enable" : true,
+  "authorId" : "8a86e6b1813b2161553e583153d4d65d",
+  "bookDetail" : {
+    "forGetMethod" : true,
+    "parser" : {
+      "coverUrl" : "\/\/div[@class=\"book-info\"]\/a\/img\/@src",
+      "statusText" : "\/\/div[@id=\"content\"]\/\/p[@class=\"intr\"]\/a[2]",
+      "typeText" : "\/\/div[@id=\"content\"]\/\/p[@class=\"intr\"]\/a[3]",
+      "lastUpdateDate" : "substring-after(\/\/table[@class=\"tabnewlist\"]\/\/tr[1]\/td[1]\/li\/a\/@title,'更新时间:')",
+      "desc" : "\/\/p[@class=\"con\"]\/text()"
+    },
+    "params" : {
+
+    },
+    "url" : "@dyn:source.helpId"
+  },
+  "bookWorld" : {
+    "排行榜" : {
+      "nextPageParams" : {
+
+      },
+      "parser" : {
+        "author" : [
+          ".\/\/p[@class=\"author\"]",
+          "substring-before(.,'\/')"
+        ],
+        "_1" : {
+          "dirURL" : [
+            ".\/\/h2[@class=\"gxz\"]\/a\/@href",
+            "@regex:\\D.*\\d+\/"
+          ],
+          "lastChapterTitle" : ".\/\/h2[@class=\"gxz\"]\/a\/text()",
+          "helpId" : ".\/\/h2[@class=\"clearfix\"]\/a\/@href"
+        },
+        "_list" : "\/\/ul[@class=\"chart-dashed-list\"]\/\/li",
+        "bookName" : ".\/\/h2[@class=\"clearfix\"]\/a\/text()",
+        "coverUrl" : ".\/p[@class=\"clearfix cover\"]\/a\/img\/@src",
+        "typeText" : [
+          ".\/\/p[@class=\"author\"]",
+          "substring-after(.,'\/')"
+        ],
+        "desc" : ".\/p[@class=\"info\"]\/text()"
+      },
+      "forGetMethod" : true,
+      "params" : {
+
+      },
+      "urls" : [
+        {
+          "sex" : 2,
+          "name" : "总排行榜",
+          "url" : "http:\/\/www.yunlaige.com\/top\/allvisit_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "字数排行",
+          "url" : "http:\/\/www.yunlaige.com\/top\/size_1.html"
+        }
+      ],
+      "maxPageCount" : "1000",
+      "nextPageForGetMedthod" : true,
+      "refererUrl" : "http:\/\/www.yunlaige.com",
+      "nextPageUrl" : "\/\/div[@id=\"pagelink\"]\/a[@class=\"next\"]\/@href"
+    },
+    "书籍分类" : {
+      "nextPageParams" : {
+
+      },
+      "parser" : {
+        "author" : ".\/td[@class=\"sitename\"]",
+        "_1" : {
+          "dirURL" : [
+            ".\/td[@class=\"lastchaptername\"]\/a\/@href",
+            "@regex:\\D.*\\d+\/"
+          ],
+          "lastChapterTitle" : ".\/td[@class=\"lastchaptername\"]\/a\/text()",
+          "helpId" : ".\/td[@class=\"bookname\"]\/a\/@href"
+        },
+        "wordCount" : ".\/td[@class=\"display \"]",
+        "_list" : "\/\/div[@id=\"booklist\"]\/\/tbody\/\/tr",
+        "bookName" : ".\/td[@class=\"bookname\"]\/a\/text()",
+        "statusText" : ".\/td[@class=\"isfinished \"]",
+        "lastUpdateDate" : ".\/td[@class=\"updatetime\"]",
+        "typeText" : ".\/td[@class=\"catname\"]"
+      },
+      "forGetMethod" : true,
+      "params" : {
+
+      },
+      "urls" : [
+        {
+          "sex" : 2,
+          "name" : "玄幻",
+          "url" : "http:\/\/www.yunlaige.com\/list\/1_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "武侠",
+          "url" : "http:\/\/www.yunlaige.com\/list\/2_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "都市",
+          "url" : "http:\/\/www.yunlaige.com\/list\/3_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "历史",
+          "url" : "http:\/\/www.yunlaige.com\/list\/4_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "网游",
+          "url" : "http:\/\/www.yunlaige.com\/list\/6_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "科幻",
+          "url" : "http:\/\/www.yunlaige.com\/list\/7_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "灵异",
+          "url" : "http:\/\/www.yunlaige.com\/list\/8_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "漫画",
+          "url" : "http:\/\/www.yunlaige.com\/list\/5_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "其他",
+          "url" : "http:\/\/www.yunlaige.com\/list\/9_1.html"
+        }
+      ],
+      "maxPageCount" : "500",
+      "nextPageForGetMedthod" : true,
+      "refererUrl" : "http:\/\/www.yunlaige.com",
+      "nextPageUrl" : "\/\/div[@id=\"pagelink\"]\/a[@class=\"next\"]\/@href"
+    }
+  },
+  "httpConfigs" : {
+    "headers" : {
+
+    },
+    "customFormatValueParam" : "JxdSecuritySub.Gb2312Encoded:value",
+    "useCookies" : true
+  },
+  "chapterDetail" : {
+    "forGetMethod" : true,
+    "parser" : {
+      "content" : ""
+    },
+    "params" : {
+
+    }
+  },
+  "weight" : 1,
+  "priorityEncoding" : 4,
+  "needSupportDynTask" : true,
+  "sourceDetail" : {
+    "nextPageParams" : {
+
+    },
+    "forGetMethod" : true,
+    "maxPageCount" : 1,
+    "parser" : {
+      "_1" : {
+        "_list" : "\/\/table[@id=\"contenttable\"]\/\/td[not(@*)]",
+        "title" : ".\/\/a\/text()",
+        "url" : ".\/a\/@href"
+      }
+    },
+    "params" : {
+
+    },
+    "nextPageForGetMedthod" : true
+  },
+  "lastModifyTime" : "2019-01-03 22:08:14",
+  "responseType" : 0,
+  "searchBook" : {
+    "nextPageParams" : {
+
+    },
+    "parser" : {
+      "author" : [
+        ".\/\/p[@class=\"author\"]",
+        "substring-before(.,'\/')"
+      ],
+      "_1" : {
+        "dirURL" : [
+          ".\/\/h2[@class=\"gxz\"]\/a\/@href",
+          "@regex:\\D.*\\d+\/"
+        ],
+        "lastChapterTitle" : ".\/\/h2[@class=\"gxz\"]\/a\/text()",
+        "helpId" : ".\/\/h2[@class=\"clearfix\"]\/a\/@href"
+      },
+      "_list" : "\/\/div[@id=\"content\"]\/div\/ul\/\/li",
+      "bookName" : ".\/\/h2[@class=\"clearfix\"]\/a\/text()",
+      "coverUrl" : ".\/p[@class=\"clearfix cover\"]\/a\/img\/@src",
+      "desc" : ".\/p[@class=\"info\"]\/text()",
+      "typeText" : [
+        ".\/\/p[@class=\"author\"]",
+        "substring-after(.,'\/')"
+      ]
+    },
+    "forGetMethod" : false,
+    "params" : {
+      "searchkey" : "%@"
+    },
+    "nextPageForGetMedthod" : true,
+    "maxPageCount" : "100",
+    "url" : "http:\/\/www.yunlaige.com\/modules\/article\/search.php",
+    "refererUrl" : "http:\/\/www.yunlaige.com",
+    "nextPageUrl" : "\/\/div[@id=\"pagelink\"]\/a[@class=\"next\"]\/@href"
+  },
+  "name" : "云来阁小说"
+}

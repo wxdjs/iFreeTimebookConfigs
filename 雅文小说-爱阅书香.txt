@@ -1,0 +1,186 @@
+{
+  "homeUrl" : "https:\/\/www.yawen365.com",
+  "enable" : true,
+  "authorId" : "8a86e6b1813b2161553e583153d4d65d",
+  "bookDetail" : {
+    "forGetMethod" : true,
+    "parser" : {
+      "coverUrl" : "\/\/div[@class=\"cover\"]\/img\/@src",
+      "statusText" : "\/\/p[@class=\"detail pt20\"]\/i[3]",
+      "typeText" : "\/\/p[@class=\"detail pt20\"]\/i[2]\/a\/text()",
+      "lastUpdateDate" : "\/\/article[@class=\"info\"]\/p[2]\/i",
+      "desc" : "\/\/p[@class=\"desc\"]\/text()"
+    },
+    "params" : {
+
+    },
+    "url" : "@dyn:source.helpId"
+  },
+  "bookWorld" : {
+    "排行榜" : {
+      "nextPageParams" : {
+
+      },
+      "parser" : {
+        "_1" : {
+          "dirURL" : "concat(.\/span[@class=\"n2\"]\/a\/@href,'mulu.htm')",
+          "lastUpdateDate" : ".\/span[@class=\"t\"]",
+          "helpId" : ".\/span[@class=\"n2\"]\/a\/@href"
+        },
+        "author" : ".\/span[@class=\"a2\"]\/a\/text()",
+        "bookName" : ".\/span[@class=\"n2\"]\/a\/text()",
+        "_list" : "\/\/section[@class=\"lastest\"]\/ul\/\/li[not(@*)]",
+        "lastUpdateDate" : ".\/span[@class=\"t\"]",
+        "typeText" : ".\/span[@class=\"nt\"]"
+      },
+      "forGetMethod" : true,
+      "params" : {
+
+      },
+      "urls" : [
+        {
+          "sex" : 2,
+          "name" : "玄幻",
+          "url" : "https:\/\/www.yawen365.com\/xuanhuan"
+        },
+        {
+          "sex" : 2,
+          "name" : "奇幻",
+          "url" : "https:\/\/www.yawen365.com\/qihuan"
+        },
+        {
+          "sex" : 2,
+          "name" : "修真",
+          "url" : "https:\/\/www.yawen365.com\/xiuzhen"
+        },
+        {
+          "sex" : 2,
+          "name" : "都市",
+          "url" : "https:\/\/www.yawen365.com\/dushi"
+        },
+        {
+          "sex" : 2,
+          "name" : "言情",
+          "url" : "https:\/\/www.yawen365.com\/yanqing"
+        },
+        {
+          "sex" : 2,
+          "name" : "历史",
+          "url" : "https:\/\/www.yawen365.com\/lishi"
+        },
+        {
+          "sex" : 2,
+          "name" : "同人",
+          "url" : "https:\/\/www.yawen365.com\/tongren"
+        },
+        {
+          "sex" : 2,
+          "name" : "武侠",
+          "url" : "https:\/\/www.yawen365.com\/wuxia"
+        },
+        {
+          "sex" : 2,
+          "name" : "科幻",
+          "url" : "https:\/\/www.yawen365.com\/kehuan"
+        },
+        {
+          "sex" : 2,
+          "name" : "游戏",
+          "url" : "https:\/\/www.yawen365.com\/youxi"
+        },
+        {
+          "sex" : 2,
+          "name" : "军事",
+          "url" : "https:\/\/www.yawen365.com\/junshi"
+        },
+        {
+          "sex" : 2,
+          "name" : "竞技",
+          "url" : "https:\/\/www.yawen365.com\/jingji"
+        },
+        {
+          "sex" : 2,
+          "name" : "灵异",
+          "url" : "https:\/\/www.yawen365.com\/lingyi"
+        },
+        {
+          "sex" : 2,
+          "name" : "其他",
+          "url" : "https:\/\/www.yawen365.com\/qita"
+        }
+      ],
+      "maxPageCount" : "2",
+      "nextPageForGetMedthod" : true,
+      "refererUrl" : "https:\/\/www.yawen365.com",
+      "nextPageUrl" : [
+        "\/\/li[@class=\"pagination\"]\/a[@class=\"next number\"]\/@href",
+        "concat('https:\/\/www.yawen365.com',\/\/section[@class=\"container\"]\/\/ul[@class=\"clearfix\"]\/li[2]\/a\/@href,.)"
+      ]
+    }
+  },
+  "chapterDetail" : {
+    "forGetMethod" : true,
+    "parser" : {
+      "content" : "\/\/div[@id=\"content\"]\/text()"
+    },
+    "params" : {
+
+    }
+  },
+  "weight" : 1,
+  "priorityEncoding" : 4,
+  "needSupportDynTask" : true,
+  "sourceDetail" : {
+    "nextPageParams" : {
+
+    },
+    "forGetMethod" : true,
+    "maxPageCount" : 1,
+    "nextPageForGetMedthod" : true,
+    "parser" : {
+      "lastChapterTitle" : "\/\/ul[@class=\"mulu\"]\/li[position()=2]\/a\/text()",
+      "_1" : {
+        "_list" : "\/\/ul[@class=\"mulu\"]\/\/li[position()>11]",
+        "title" : ".\/a\/text()",
+        "url" : ".\/a\/@href"
+      }
+    },
+    "params" : {
+
+    }
+  },
+  "lastModifyTime" : "2019-01-03 21:24:59",
+  "responseType" : 0,
+  "searchBook" : {
+    "nextPageParams" : {
+      "keyword" : "%@"
+    },
+    "parser" : {
+      "_1" : {
+        "dirURL" : "concat(.\/span[@class=\"n2\"]\/a\/@href,'mulu.htm')",
+        "lastUpdateDate" : ".\/span[@class=\"t\"]",
+        "helpId" : ".\/span[@class=\"n2\"]\/a\/@href"
+      },
+      "author" : ".\/span[@class=\"a2\"]\/a\/text()",
+      "bookName" : ".\/span[@class=\"n2\"]\/a\/text()",
+      "_list" : "\/\/section[@class=\"lastest\"]\/ul\/\/li[not(@*)]",
+      "lastUpdateDate" : ".\/span[@class=\"t\"]",
+      "typeText" : ".\/span[@class=\"nt\"]"
+    },
+    "forGetMethod" : true,
+    "params" : {
+      "keyword" : "%@"
+    },
+    "nextPageForGetMedthod" : true,
+    "maxPageCount" : "100",
+    "url" : "https:\/\/www.yawen365.com\/search.htm",
+    "refererUrl" : "https:\/\/www.yawen365.com",
+    "nextPageUrl" : [
+      "\/\/li[@class=\"pagination\"]\/a[@class=\"next number\"]\/@href",
+      "@regex:[\\d+]",
+      ".+1",
+      "concat('https:\/\/www.yawen365.com\/search.htm?pn=',.)"
+    ]
+  },
+  "name" : "雅文小说"
+}

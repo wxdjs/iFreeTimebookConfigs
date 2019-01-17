@@ -1,0 +1,228 @@
+{
+  "homeUrl" : "http:\/\/www.wzzw.la",
+  "enable" : true,
+  "authorId" : "8a86e6b1813b2161553e583153d4d65d",
+  "bookDetail" : {
+    "parser" : {
+      "coverUrl" : "\/\/div[@class=\"col-xs-2\"]\/img\/@src",
+      "statusText" : [
+        "\/\/li[@class=\"col-xs-4 list-group-item no-border\"][2]",
+        "substring-after(.,'：')"
+      ],
+      "typeText" : [
+        "\/\/li[@class=\"col-xs-4 list-group-item no-border\"]\/a\/text()",
+        "substring-before(.,'小说')"
+      ],
+      "lastUpdateDate" : "\/\/li[@class=\"col-xs-4 list-group-item no-border\"][3]",
+      "desc" : "\/\/*[@id=\"shot\"]\/text()"
+    },
+    "params" : {
+
+    },
+    "forGetMethod" : true,
+    "nextPageForGetMedthod" : true,
+    "nextPageParams" : {
+
+    },
+    "maxPageCount" : 1,
+    "url" : "@dyn:source.helpId"
+  },
+  "bookWorld" : {
+    "书籍分类" : {
+      "nextPageParams" : {
+
+      },
+      "parser" : {
+        "_1" : {
+          "helpId" : "concat('http:\/\/www.wzzw.la',.\/div[@class=\"col-xs-3\"]\/a\/@href)",
+          "lastUpdateDate" : ".\/div[5]\/span[@class=\"time\"]",
+          "dirURL" : [
+            "div[3]\/a\/@href",
+            "@regex:\\\/.*\\\/"
+          ],
+          "lastChapterTitle" : "div[@class=\"col-xs-4\"]\/a\/text()"
+        },
+        "author" : ".\/div[4]",
+        "bookName" : ".\/div[2]\/a\/text()",
+        "_list" : "\/\/div[@id=\"novel-list\"]\/ul\/\/li[position()>1]",
+        "lastUpdateDate" : ".\/div[5]\/span",
+        "typeText" : ".\/div[1]\/i"
+      },
+      "forGetMethod" : true,
+      "params" : {
+
+      },
+      "urls" : [
+        {
+          "sex" : 2,
+          "name" : "玄幻",
+          "url" : "http:\/\/www.wzzw.la\/xuanhuanxiaoshuo"
+        },
+        {
+          "sex" : 2,
+          "name" : "奇幻",
+          "url" : "http:\/\/www.wzzw.la\/qihuanxiaoshuo"
+        },
+        {
+          "sex" : 2,
+          "name" : "修真",
+          "url" : "http:\/\/www.wzzw.la\/xiuzhenxiaoshuo"
+        },
+        {
+          "sex" : 2,
+          "name" : "都市",
+          "url" : "http:\/\/www.wzzw.la\/dushixiaoshuo"
+        },
+        {
+          "sex" : 2,
+          "name" : "言情",
+          "url" : "http:\/\/www.wzzw.la\/yanqingxiaoshuo"
+        },
+        {
+          "sex" : 2,
+          "name" : "历史",
+          "url" : "http:\/\/www.wzzw.la\/lishixiaoshuo"
+        },
+        {
+          "sex" : 2,
+          "name" : "耽美",
+          "url" : "http:\/\/www.wzzw.la\/danmeixiaoshuo"
+        },
+        {
+          "sex" : 2,
+          "name" : "武侠",
+          "url" : "http:\/\/www.wzzw.la\/wuxia科幻xiaoshuo"
+        },
+        {
+          "sex" : 2,
+          "name" : "科幻",
+          "url" : "http:\/\/www.wzzw.la\/kehuanxiaoshuo"
+        },
+        {
+          "sex" : 2,
+          "name" : "游戏",
+          "url" : "http:\/\/www.wzzw.la\/youxixiaoshuo"
+        },
+        {
+          "sex" : 2,
+          "name" : "军事",
+          "url" : "http:\/\/www.wzzw.la\/junshixiaoshuo"
+        },
+        {
+          "sex" : 2,
+          "name" : "竞技",
+          "url" : "http:\/\/www.wzzw.la\/jingjixiaoshuo"
+        },
+        {
+          "sex" : 2,
+          "name" : "灵异",
+          "url" : "http:\/\/www.wzzw.la\/lingyixiaoshuo"
+        },
+        {
+          "sex" : 2,
+          "name" : "商战",
+          "url" : "http:\/\/www.wzzw.la\/shangzhanxiaoshuo"
+        },
+        {
+          "sex" : 2,
+          "name" : "校园",
+          "url" : "http:\/\/www.wzzw.la\/xiaoyuanxiaoshuo"
+        },
+        {
+          "sex" : 2,
+          "name" : "官场",
+          "url" : "http:\/\/www.wzzw.la\/guanchangxiaoshuo"
+        },
+        {
+          "sex" : 2,
+          "name" : "职场",
+          "url" : "http:\/\/www.wzzw.la\/zhichangxiaoshuo"
+        },
+        {
+          "sex" : 2,
+          "name" : "其他",
+          "url" : "http:\/\/www.wzzw.la\/qitaxiaoshuo"
+        }
+      ],
+      "maxPageCount" : "2",
+      "nextPageForGetMedthod" : true,
+      "refererUrl" : "http:\/\/www.wzzw.la",
+      "nextPageUrl" : "\/\/ul[@class=\"pagination pagination-sm\"]\/li[last()]\/a\/@href"
+    }
+  },
+  "httpConfigs" : {
+    "headers" : {
+
+    },
+    "customFormatValueParam" : "",
+    "useCookies" : true
+  },
+  "chapterDetail" : {
+    "forGetMethod" : true,
+    "parser" : {
+      "content" : "\/\/*[@id=\"txtContent\"]\/text()"
+    },
+    "params" : {
+
+    }
+  },
+  "weight" : 1,
+  "priorityEncoding" : 4,
+  "needSupportDynTask" : true,
+  "sourceDetail" : {
+    "nextPageParams" : {
+
+    },
+    "parser" : {
+      "lastChapterTitle" : "\/\/ul[@class=\"list-group\"]\/li[2]\/a\/text()",
+      "_1" : {
+        "_list" : "\/\/ul[@id=\"chapters-list\"]\/\/li[not(@*)]",
+        "title" : ".\/a\/text()",
+        "url" : "concat('http:\/\/www.wzzw.la',.\/a\/@href)"
+      }
+    },
+    "forGetMethod" : true,
+    "params" : {
+
+    },
+    "nextPageForGetMedthod" : true,
+    "maxPageCount" : "1",
+    "refererUrl" : ""
+  },
+  "lastModifyTime" : "2019-01-01 18:45:57",
+  "responseType" : 0,
+  "searchBook" : {
+    "nextPageParams" : {
+      "keyword" : "%@"
+    },
+    "parser" : {
+      "_1" : {
+        "dirURL" : [
+          ".\/div[@class=\"col-xs-4\"]\/a\/@href",
+          "@regex:\\\/.*\\\/"
+        ],
+        "lastChapterTitle" : ".\/div[3]\/a\/text()",
+        "helpId" : "concat('http:\/\/www.wzzw.la',.\/div[@class=\"col-xs-3\"]\/a\/@href)"
+      },
+      "author" : ".\/div[4]",
+      "bookName" : ".\/div[2]\/a\/text()",
+      "_list" : "\/\/div[@id=\"novel-list\"]\/ul\/\/li[position()>1]",
+      "lastUpdateDate" : ".\/div[5]\/span",
+      "typeText" : ".\/div[1]\/i"
+    },
+    "forGetMethod" : true,
+    "params" : {
+      "keyword" : "%@"
+    },
+    "nextPageForGetMedthod" : true,
+    "maxPageCount" : "400",
+    "url" : "http:\/\/www.wzzw.la\/search.htm",
+    "refererUrl" : "http:\/\/www.wzzw.la",
+    "nextPageUrl" : [
+      "\/\/ul[@class=\"pagination pagination-sm\"]\/li[last()]\/a\/@href",
+      "@regex:pn=\\d+",
+      "concat('http:\/\/www.wzzw.la\/search.htm?',.,'&')"
+    ]
+  },
+  "name" : "梧州中文网"
+}
