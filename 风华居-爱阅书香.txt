@@ -1,0 +1,144 @@
+{
+  "homeUrl" : "http:\/\/www.fenghuaju.cc\/",
+  "enable" : true,
+  "authorId" : "8a86e6b1813b2161553e583153d4d65d",
+  "bookDetail" : {
+    "forGetMethod" : true,
+    "parser" : {
+      "coverUrl" : "\/\/div[@id=\"fmimg\"]\/img\/@src",
+      "statusText" : [
+        ".\/\/div[@id=\"fmimg\"]\/span\/attribute::class",
+        "@regex:b @=>连载",
+        "@regex:a @=>完本"
+      ],
+      "typeText" : "\/\/div[@class=\"con_top\"]\/a[2]\/text()",
+      "lastUpdateDate" : "\/\/div[@id=\"info\"]\/p[contains(text(), \"最后更新：\")]\/text()",
+      "desc" : "\/\/div[@id=\"intro\"]\/p[1]\/text()"
+    },
+    "params" : {
+
+    }
+  },
+  "bookWorld" : {
+    "最近更新分类" : {
+      "forGetMethod" : true,
+      "parser" : {
+        "_1" : {
+          "dirURL" : ".\/span[@class=\"s2\"]\/a\/@href",
+          "lastChapterTitle" : ".\/span[@class=\"s3\"]\/a\/text()",
+          "lastUpdateDate" : ".\/span[@class=\"s5\"]"
+        },
+        "author" : ".\/span[@class=\"s4\"]",
+        "bookName" : ".\/span[@class=\"s2\"]\/a\/text()",
+        "_list" : "\/\/div[@class=\"l\"]\/ul\/\/li",
+        "lastUpdateDate" : ".\/span[@class=\"s5\"]",
+        "typeText" : [
+          ".\/span[@class=\"s1\"]",
+          "@regex:\\w+"
+        ]
+      },
+      "params" : {
+
+      },
+      "urls" : [
+        {
+          "sex" : 2,
+          "name" : "玄幻",
+          "url" : "http:\/\/www.fenghuaju.cc\/xuanhuanxiaoshuo\/"
+        },
+        {
+          "sex" : 2,
+          "name" : "修真",
+          "url" : "http:\/\/www.fenghuaju.cc\/xiuzhenxiaoshuo\/"
+        },
+        {
+          "sex" : 2,
+          "name" : "都市",
+          "url" : "http:\/\/www.fenghuaju.cc\/dushixiaoshuo\/"
+        },
+        {
+          "sex" : 2,
+          "name" : "穿越",
+          "url" : "http:\/\/www.fenghuaju.cc\/chuanyuexiaoshuo\/"
+        },
+        {
+          "sex" : 2,
+          "name" : "网游",
+          "url" : "http:\/\/www.fenghuaju.cc\/wangyouxiaoshuo\/"
+        },
+        {
+          "sex" : 2,
+          "name" : "科幻",
+          "url" : "http:\/\/www.fenghuaju.cc\/nvshengxiaoshuo\/"
+        }
+      ]
+    }
+  },
+  "httpConfigs" : {
+    "headers" : {
+
+    },
+    "customFormatValueParam" : "JxdSecuritySub.Gb2312Encoded:value",
+    "useCookies" : true
+  },
+  "chapterDetail" : {
+    "forGetMethod" : true,
+    "parser" : {
+      "content" : "\/\/div[@id=\"content\"]\/\/text()"
+    },
+    "params" : {
+
+    }
+  },
+  "weight" : 1,
+  "priorityEncoding" : 4,
+  "needSupportDynTask" : true,
+  "sourceDetail" : {
+    "forGetMethod" : true,
+    "parser" : {
+      "lastUpdateDate" : "\/\/div[@id=\"info\"]\/p[contains(text(), \"最后更新：\")]\/text()",
+      "lastChapterTitle" : "\/\/div[@id=\"list\"]\/dl\/dd[1]\/a\/text()",
+      "_1" : {
+        "_list" : "\/\/div[@id=\"list\"]\/dl\/\/dd[position()>9]",
+        "title" : ".\/a\/text()",
+        "url" : ".\/a\/@href"
+      }
+    },
+    "params" : {
+
+    }
+  },
+  "lastModifyTime" : "2019-01-13 08:42:02",
+  "responseType" : 0,
+  "searchBook" : {
+    "nextPageParams" : {
+
+    },
+    "parser" : {
+      "_1" : {
+        "dirURL" : ".\/td[1]\/a\/@href",
+        "lastChapterTitle" : ".\/td[2]\/a\/text()"
+      },
+      "author" : [
+        ".\/td[1]\/text()[2]",
+        "@regex:\\w+"
+      ],
+      "bookName" : ".\/td[1]\/a\/text()",
+      "_list" : "\/\/div[@id=\"main\"]\/\/tr[position()>1]",
+      "typeText" : [
+        ".\/td[1]\/text()[1]",
+        "@regex:\\w+"
+      ],
+      "lastUpdateDate" : ".\/td[2]\/text()"
+    },
+    "forGetMethod" : true,
+    "params" : {
+      "searchkey" : "%@"
+    },
+    "nextPageForGetMedthod" : true,
+    "maxPageCount" : "100",
+    "url" : "http:\/\/www.fenghuaju.cc\/search.php",
+    "nextPageUrl" : "\/\/div[@id=\"pagelink\"]\/a[@class=\"next\"]\/@href"
+  },
+  "name" : "风华居"
+}

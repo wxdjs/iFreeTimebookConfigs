@@ -1,0 +1,136 @@
+{
+  "homeUrl" : "https:\/\/www.siluke.tw",
+  "enable" : true,
+  "authorId" : "22f651ef2ff67237bac9d519b279a919",
+  "bookDetail" : {
+    "forGetMethod" : true,
+    "parser" : {
+      "coverUrl" : "\/\/div[@id=\"sidebar\"]\/div\/img\/@src",
+      "statusText" : [
+        "\/\/div[@id=\"info\"]\/p[2]\/text()[1]",
+        "substring-after(.,\"：\")",
+        "substring-before(.,\",\")"
+      ],
+      "typeText" : "substring-before(\/\/div[@class=\"con_top\"]\/a[2]\/text(),\"小说\")",
+      "lastUpdateDate" : [
+        "\/\/div[@id=\"info\"]\/p[3]\/text()",
+        "substring-after(.,\"：\")"
+      ],
+      "desc" : "\/\/div[@id=\"intro\"]\/\/p\/text()"
+    },
+    "params" : {
+
+    }
+  },
+  "bookWorld" : {
+    "排行榜" : {
+      "parser" : {
+        "author" : ".\/span[4]\/text()",
+        "_1" : {
+          "dirURL" : "concat(\"https:\/\/www.siluke.tw\",.\/span[2]\/a\/@href)"
+        },
+        "_list" : "\/\/div[@class=\"novelslist2\"]\/ul\/\/li",
+        "bookName" : ".\/span[2]\/a\/text()",
+        "statusText" : ".\/span[6]\/text()",
+        "lastUpdateDate" : ".\/span[5]\/text()",
+        "typeText" : [
+          ".\/span[1]\/a\/text()",
+          "substring-before(.,\"小说\")"
+        ]
+      },
+      "params" : {
+
+      },
+      "forGetMethod" : true,
+      "nextPageForGetMedthod" : true,
+      "urls" : [
+        {
+          "sex" : 2,
+          "name" : "连载榜",
+          "url" : "https:\/\/www.siluke.tw\/nyph.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "完本榜",
+          "url" : "https:\/\/www.siluke.tw\/nyjd.html"
+        }
+      ],
+      "maxPageCount" : 1,
+      "nextPageParams" : {
+
+      },
+      "type" : 2
+    }
+  },
+  "httpConfigs" : {
+    "headers" : {
+
+    },
+    "useCookies" : true
+  },
+  "chapterDetail" : {
+    "forGetMethod" : true,
+    "parser" : {
+      "content" : [
+        "\/\/div[@id=\"content\"]\/text()",
+        "@regex:<a .*<\/a> @=>"
+      ]
+    },
+    "params" : {
+
+    }
+  },
+  "weight" : 19,
+  "priorityEncoding" : 4,
+  "needSupportDynTask" : true,
+  "sourceDetail" : {
+    "forGetMethod" : true,
+    "parser" : {
+      "_1" : {
+        "_list" : "\/\/div[@id=\"list\"]\/dl\/\/dd",
+        "title" : ".\/a\/text()",
+        "url" : "concat(\"https:\/\/www.siluke.tw\",.\/a\/@href)"
+      },
+      "lastChapterTitle" : "\/\/div[@id=\"info\"]\/p[4]\/a\/text()",
+      "lastUpdateDate" : [
+        "\/\/div[@id=\"info\"]\/p[3]",
+        "substring-after(.,'：')"
+      ]
+    },
+    "params" : {
+
+    }
+  },
+  "password" : "",
+  "lastModifyTime" : "2019-01-03 09:00:58",
+  "responseType" : 0,
+  "searchBook" : {
+    "nextPageParams" : {
+
+    },
+    "parser" : {
+      "author" : "normalize-space(.\/div[@class=\"result-game-item-detail\"]\/div\/p[1]\/span[2]\/text())",
+      "_1" : {
+        "dirURL" : ".\/div[@class=\"result-game-item-detail\"]\/h3\/a\/@href",
+        "lastChapterTitle" : ".\/div[@class=\"result-game-item-detail\"]\/div[@class=\"result-game-item-info\"]\/p[4]\/a\/text()",
+        "lastUpdateDate" : ".\/div[@class=\"result-game-item-detail\"]\/div\/p[3]\/span[2]\/text()"
+      },
+      "_list" : "\/\/div[@class=\"result-list\"]\/\/div[@class=\"result-item result-game-item\"]",
+      "bookName" : ".\/div[@class=\"result-game-item-detail\"]\/h3\/a\/span\/text()",
+      "coverUrl" : ".\/div[@class=\"result-game-item-pic\"]\/a\/img\/@src",
+      "lastUpdateDate" : ".\/div[@class=\"result-game-item-detail\"]\/div\/p[3]\/span[2]\/text()",
+      "desc" : ".\/div[@class=\"result-game-item-detail\"]\/p\/text()",
+      "typeText" : "substring-before(.\/div[@class=\"result-game-item-detail\"]\/div\/p[2]\/span[2]\/text(),\"小说\")"
+    },
+    "forGetMethod" : true,
+    "params" : {
+      "keyword" : "%@"
+    },
+    "nextPageForGetMedthod" : true,
+    "maxPageCount" : "100",
+    "url" : "https:\/\/www.siluke.tw\/search.php",
+    "refererUrl" : "https:\/\/www.siluke.tw",
+    "nextPageUrl" : "\/\/div[@class=\"search-result-page-main\"]\/a[@title=\"下一页\"]\/@href"
+  },
+  "name" : "思路客"
+}

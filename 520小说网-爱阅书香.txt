@@ -1,0 +1,175 @@
+{
+  "homeUrl" : "http:\/\/www.520xiaoshuo.com\/",
+  "enable" : true,
+  "authorId" : "8a86e6b1813b2161553e583153d4d65d",
+  "bookDetail" : {
+    "forGetMethod" : true,
+    "parser" : {
+      "coverUrl" : "\/\/div[@id=\"fmimg\"]\/img\/@src",
+      "statusText" : [
+        "\/\/div[@id=\"info\"]\/p[2]",
+        "substring-after(.,'：')"
+      ],
+      "typeText" : [
+        "\/\/div[@id=\"info\"]\/p[1]",
+        "substring-after(.,'：')"
+      ],
+      "lastUpdateDate" : [
+        "\/\/div[@id=\"info\"]\/p[6]",
+        "substring-after(.,'：')"
+      ],
+      "desc" : "\/\/div[@id=\"intro\"]\/p[1]\/text()"
+    },
+    "params" : {
+
+    }
+  },
+  "bookWorld" : {
+    "最近更新分类" : {
+      "forGetMethod" : true,
+      "parser" : {
+        "_1" : {
+          "dirURL" : ".\/span[@class=\"s2\"]\/a\/@href",
+          "lastChapterTitle" : ".\/span[@class=\"s3\"]\/a\/text()",
+          "lastUpdateDate" : ".\/span[@class=\"s5\"]"
+        },
+        "author" : ".\/span[@class=\"s4\"]",
+        "bookName" : ".\/span[@class=\"s2\"]\/a\/text()",
+        "_list" : "\/\/div[@class=\"l bd\"]\/ul\/\/li",
+        "lastUpdateDate" : ".\/span[@class=\"s5\"]",
+        "typeText" : [
+          ".\/span[@class=\"s1\"]",
+          "@regex:\\w+"
+        ]
+      },
+      "params" : {
+
+      },
+      "urls" : [
+        {
+          "sex" : 2,
+          "name" : "全本",
+          "url" : "http:\/\/www.520xiaoshuo.com\/quanben"
+        },
+        {
+          "sex" : 2,
+          "name" : "玄幻",
+          "url" : "http:\/\/www.520xiaoshuo.com\/xuanhuan"
+        },
+        {
+          "sex" : 2,
+          "name" : "修真",
+          "url" : "http:\/\/www.520xiaoshuo.com\/wuxia"
+        },
+        {
+          "sex" : 2,
+          "name" : "历史",
+          "url" : "http:\/\/www.520xiaoshuo.com\/dushi"
+        },
+        {
+          "sex" : 2,
+          "name" : "历史",
+          "url" : "http:\/\/www.520xiaoshuo.com\/lishi"
+        },
+        {
+          "sex" : 2,
+          "name" : "网游",
+          "url" : "http:\/\/www.520xiaoshuo.com\/youxi"
+        },
+        {
+          "sex" : 2,
+          "name" : "科幻",
+          "url" : "http:\/\/www.520xiaoshuo.com\/kehuan"
+        },
+        {
+          "sex" : 2,
+          "name" : "女生",
+          "url" : "http:\/\/www.520xiaoshuo.com\/nvsheng"
+        },
+        {
+          "sex" : 2,
+          "name" : "其他",
+          "url" : "http:\/\/www.520xiaoshuo.com\/qita"
+        }
+      ]
+    }
+  },
+  "httpConfigs" : {
+    "headers" : {
+
+    },
+    "customFormatValueParam" : "JxdSecuritySub.Gb2312Encoded:value",
+    "useCookies" : true
+  },
+  "chapterDetail" : {
+    "forGetMethod" : true,
+    "parser" : {
+      "content" : "\/\/div[@id=\"content\"]\/text()"
+    },
+    "params" : {
+
+    }
+  },
+  "weight" : 1,
+  "priorityEncoding" : 4,
+  "needSupportDynTask" : true,
+  "sourceDetail" : {
+    "forGetMethod" : true,
+    "parser" : {
+      "lastUpdateDate" : "\/\/div[@id=\"info\"]\/p[6]",
+      "lastChapterTitle" : "\/\/div[@id=\"info\"]\/p[5]\/a\/text()",
+      "_1" : {
+        "_list" : "\/\/div[@class=\"listmain\"]\/dl\/\/dd",
+        "title" : ".\/a\/text()",
+        "url" : ".\/a\/@href"
+      }
+    },
+    "params" : {
+
+    }
+  },
+  "lastModifyTime" : "2019-01-13 10:11:26",
+  "searchSource" : {
+    "forGetMethod" : true,
+    "parser" : {
+      "_list" : "",
+      "dirURL" : "",
+      "webName" : ""
+    },
+    "params" : {
+
+    }
+  },
+  "responseType" : 0,
+  "searchBook" : {
+    "nextPageParams" : {
+
+    },
+    "parser" : {
+      "author" : [
+        ".\/\/div[@class=\"author\"]",
+        "substring-after(.,'作者：')"
+      ],
+      "_1" : {
+        "dirURL" : ".\/\/h4[@class=\"bookname\"]\/a\/@href",
+        "lastChapterTitle" : ".\/\/div[@class=\"update\"]\/a\/text()"
+      },
+      "_list" : "\/\/div[@class=\"type_show\"]\/\/div",
+      "bookName" : ".\/\/h4[@class=\"bookname\"]\/a\/text()",
+      "coverUrl" : ".\/div[@class=\"p10\"]\/div[@class=\"bookimg\"]\/a\/img\/@src",
+      "typeText" : [
+        ".\/\/div[@class=\"cat\"]",
+        "substring-after(.,'分类：')"
+      ],
+      "desc" : ".\/div[@class=\"p10\"]\/div[@class=\"bookinfo\"]\/p\/text()"
+    },
+    "forGetMethod" : true,
+    "params" : {
+      "q" : "%@"
+    },
+    "nextPageForGetMedthod" : true,
+    "maxPageCount" : 1,
+    "url" : "http:\/\/www.520xiaoshuo.com\/s.php"
+  },
+  "name" : "520小说网"
+}

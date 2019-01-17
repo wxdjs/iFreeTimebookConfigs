@@ -1,0 +1,219 @@
+{
+  "homeUrl" : "http:\/\/www.uctxt.com",
+  "enable" : true,
+  "authorId" : "8a86e6b1813b2161553e583153d4d65d",
+  "bookDetail" : {
+    "forGetMethod" : true,
+    "parser" : {
+      "coverUrl" : [
+        "@dyn:source.dirURL",
+        "@regex:\\d+\/\\d+",
+        "concat('http:\/\/www.uctxt.com\/files\/article\/image\/',.,'\/',substring-after(.,'\/'),'s.jpg')"
+      ],
+      "statusText" : "\/\/div[@class=\"book-about clrfix\"]\/p[1]\/span[2]\/i[1]",
+      "wordCount" : "\/\/div[@class=\"book-about clrfix\"]\/p[1]\/span[2]\/i[2]",
+      "lastUpdateDate" : "\/\/div[@class=\"book-about clrfix\"]\/p[@class=\"stats\"]\/span[@class=\"r\"]\/i[3]",
+      "typeText" : [
+        "\/\/div[@class=\"crumbs clrfix\"]\/div[@class=\"l\"]\/span[1]",
+        "substring-before(.,'小说')"
+      ],
+      "desc" : "\/\/p[@class=\"intro\"]\/text()"
+    },
+    "params" : {
+
+    }
+  },
+  "bookWorld" : {
+    "排行榜" : {
+      "nextPageParams" : {
+
+      },
+      "parser" : {
+        "_1" : {
+          "dirURL" : ".\/span[2]\/a\/@href",
+          "lastChapterTitle" : ".\/span[2]\/small\/a\/text()",
+          "lastUpdateDate" : ".\/span[3]\/small"
+        },
+        "author" : ".\/span[3]\/text()",
+        "bookName" : ".\/span[2]\/a\/text()",
+        "_list" : "\/\/div[@class=\"list-lastupdate\"]\/ul\/\/li",
+        "coverUrl" : "concat('http:\/\/www.uctxt.com\/files\/article\/image\/',substring-after(.\/span[2]\/a\/@href,'\/book\/'),substring-before(substring-after(substring-after(.\/span[2]\/a\/@href,'\/book\/'),'\/'),'\/'),'s.jpg')",
+        "typeText" : "substring-before(substring-after(.\/span[1],'['),'小说]')"
+      },
+      "forGetMethod" : true,
+      "params" : {
+
+      },
+      "urls" : [
+        {
+          "sex" : 2,
+          "name" : "总点击榜",
+          "url" : "http:\/\/www.uctxt.com\/toplist\/allvisit-1"
+        },
+        {
+          "sex" : 2,
+          "name" : "总推荐榜",
+          "url" : "http:\/\/www.uctxt.com\/toplist\/allvote-1"
+        },
+        {
+          "sex" : 2,
+          "name" : "总收藏榜",
+          "url" : "http:\/\/www.uctxt.com\/toplist\/goodnum-1"
+        }
+      ],
+      "maxPageCount" : "700",
+      "nextPageForGetMedthod" : true,
+      "refererUrl" : "http:\/\/www.uctxt.com",
+      "nextPageUrl" : "\/\/div[@class=\"pages\"]\/a[@class=\"next\"]\/@href"
+    },
+    "书籍分类" : {
+      "nextPageParams" : {
+
+      },
+      "parser" : {
+        "_1" : {
+          "dirURL" : ".\/span[2]\/a\/@href",
+          "lastChapterTitle" : ".\/span[2]\/small\/a\/text()",
+          "lastUpdateDate" : ".\/span[3]\/small"
+        },
+        "author" : ".\/span[3]\/text()",
+        "bookName" : ".\/span[2]\/a\/text()",
+        "_list" : "\/\/div[@class=\"list-lastupdate\"]\/ul\/\/li",
+        "coverUrl" : "concat('http:\/\/www.uctxt.com\/files\/article\/image\/',substring-after(.\/span[2]\/a\/@href,'\/book\/'),substring-before(substring-after(substring-after(.\/span[2]\/a\/@href,'\/book\/'),'\/'),'\/'),'s.jpg')",
+        "typeText" : "substring-before(substring-after(.\/span[1],'['),'小说]')"
+      },
+      "forGetMethod" : true,
+      "params" : {
+
+      },
+      "urls" : [
+        {
+          "sex" : 2,
+          "name" : "玄幻小说",
+          "url" : "http:\/\/www.uctxt.com\/index\/type-1-1"
+        },
+        {
+          "sex" : 2,
+          "name" : "仙侠小说",
+          "url" : "http:\/\/www.uctxt.com\/index\/type-2-1"
+        },
+        {
+          "sex" : 2,
+          "name" : "都市小说",
+          "url" : "http:\/\/www.uctxt.com\/index\/type-3-1"
+        },
+        {
+          "sex" : 2,
+          "name" : "历史小说",
+          "url" : "http:\/\/www.uctxt.com\/index\/type-4-1"
+        },
+        {
+          "sex" : 2,
+          "name" : "网游小说",
+          "url" : "http:\/\/www.uctxt.com\/index\/type-5-1"
+        },
+        {
+          "sex" : 2,
+          "name" : "科幻小说",
+          "url" : "http:\/\/www.uctxt.com\/index\/type-6-1"
+        },
+        {
+          "sex" : 2,
+          "name" : "言情小说",
+          "url" : "http:\/\/www.uctxt.com\/index\/type-7-1"
+        },
+        {
+          "sex" : 2,
+          "name" : "全本小说",
+          "url" : "http:\/\/www.uctxt.com\/index\/quanben-1"
+        }
+      ],
+      "maxPageCount" : "300",
+      "nextPageForGetMedthod" : true,
+      "refererUrl" : "http:\/\/www.uctxt.com",
+      "nextPageUrl" : "\/\/div[@class=\"pages\"]\/a[@class=\"next\"]\/@href"
+    }
+  },
+  "httpConfigs" : {
+    "headers" : {
+
+    },
+    "customFormatValueParam" : "JxdSecuritySub.Gb2312Encoded:value",
+    "useCookies" : true
+  },
+  "chapterDetail" : {
+    "forGetMethod" : true,
+    "parser" : {
+      "content" : "\/\/div[@id=\"content\"]\/text()"
+    },
+    "params" : {
+
+    }
+  },
+  "weight" : 1,
+  "priorityEncoding" : 4,
+  "needSupportDynTask" : true,
+  "sourceDetail" : {
+    "forGetMethod" : true,
+    "maxPageCount" : 1,
+    "parser" : {
+      "_1" : {
+        "_list" : "\/\/dl[@class=\"chapter-list clrfix\"]\/\/dd",
+        "title" : ".\/a\/text()",
+        "url" : ".\/a\/@href"
+      },
+      "lastChapterTitle" : "\/\/div[@class=\"book-about clrfix\"]\/p[@class=\"stats\"]\/span[@class=\"l\"]\/a\/text()",
+      "lastUpdateDate" : "\/\/div[@class=\"book-about clrfix\"]\/p[@class=\"stats\"]\/span[@class=\"r\"]\/i[3]"
+    },
+    "params" : {
+
+    },
+    "nextPageForGetMedthod" : true,
+    "nextPageParams" : {
+
+    }
+  },
+  "lastModifyTime" : "2018-12-31 09:14:08",
+  "searchSource" : {
+    "forGetMethod" : true,
+    "parser" : {
+      "_list" : "",
+      "dirURL" : "",
+      "webName" : ""
+    },
+    "params" : {
+
+    }
+  },
+  "responseType" : 0,
+  "searchBook" : {
+    "nextPageParams" : {
+
+    },
+    "parser" : {
+      "author" : ".\/span[3]\/text()",
+      "_1" : {
+        "dirURL" : ".\/span[2]\/a\/@href",
+        "lastChapterTitle" : ".\/span[2]\/small\/a\/text()"
+      },
+      "wordCount" : ".\/span[3]\/small[1]",
+      "_list" : "\/\/div[@class=\"list-lastupdate\"]\/ul\/\/li",
+      "bookName" : ".\/span[2]\/a\/text()",
+      "statusText" : ".\/span[3]\/small[3]",
+      "coverUrl" : "concat('http:\/\/www.uctxt.com\/files\/article\/image\/',substring-after(.\/span[2]\/a\/@href,'\/book\/'),substring-before(substring-after(substring-after(.\/span[2]\/a\/@href,'\/book\/'),'\/'),'\/'),'s.jpg')",
+      "lastUpdateDate" : ".\/span[3]\/small[2]",
+      "typeText" : [
+        ".\/span[1]",
+        "@regex:\\w"
+      ]
+    },
+    "forGetMethod" : true,
+    "params" : {
+      "searchkey" : "%@"
+    },
+    "nextPageForGetMedthod" : true,
+    "maxPageCount" : 1,
+    "url" : "http:\/\/www.uctxt.com\/modules\/article\/search.php"
+  },
+  "name" : "UC书盟"
+}

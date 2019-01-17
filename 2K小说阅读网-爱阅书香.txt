@@ -1,0 +1,214 @@
+{
+  "homeUrl" : "https:\/\/www.fpzw.com\/",
+  "enable" : true,
+  "authorId" : "8a86e6b1813b2161553e583153d4d65d",
+  "bookDetail" : {
+    "forGetMethod" : true,
+    "parser" : {
+      "coverUrl" : "\/\/div[@class=\"bortable wleft\"]\/img\/@src",
+      "wordCount" : "\/\/div[@id=\"box4\"]\/p\/small[1]",
+      "lastUpdateDate" : "\/\/div[@class=\"winfo\"]\/\/li[contains(text(), \"更新时间：\")]\/span\/text()",
+      "typeText" : "\/\/div[@class=\"winfo\"]\/\/li[contains(text(), \"分类：\")]\/span\/text()",
+      "statusText" : "substring-after(\/\/div[@id=\"box4\"]\/p\/text()[5],\"此书\")",
+      "desc" : "\/\/p[@class=\"Text\"]"
+    },
+    "params" : {
+
+    },
+    "url" : "@dyn:source.helpId"
+  },
+  "bookWorld" : {
+    "排行榜" : {
+      "forGetMethod" : true,
+      "parser" : {
+        "author" : ".\/td[6]\/a\/text()",
+        "_1" : {
+          "dirURL" : ".\/td[2]\/a\/@href",
+          "lastChapterTitle" : ".\/td[4]\/a\/text()",
+          "helpId" : "concat('https:\/\/www.fpzw.com',.\/td[3]\/a\/@href)"
+        },
+        "_list" : "\/\/div[@id=\"content\"]\/\/tbody\/tr",
+        "bookName" : ".\/td[2]\/a\/text()",
+        "statusText" : ".\/td[8]",
+        "lastUpdateDate" : ".\/td[7]",
+        "typeText" : [
+          ".\/td[1]",
+          "@regex:\\w+"
+        ]
+      },
+      "params" : {
+
+      },
+      "urls" : [
+        {
+          "sex" : 2,
+          "name" : "总点击榜",
+          "url" : "https:\/\/www.fpzw.com\/top\/allvisit_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "总推荐榜",
+          "url" : "https:\/\/www.fpzw.com\/top\/allvote_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "总收藏榜",
+          "url" : "https:\/\/www.fpzw.com\/top\/goodnum_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "字数排行",
+          "url" : "https:\/\/www.fpzw.com\/top\/size_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "最近更新",
+          "url" : "https:\/\/www.fpzw.com\/top\/lastupdate_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "最新入库",
+          "url" : "https:\/\/www.fpzw.com\/top\/postdate_1.html"
+        }
+      ]
+    },
+    "书籍分类" : {
+      "forGetMethod" : true,
+      "parser" : {
+        "author" : ".\/td[6]\/a\/text()",
+        "_1" : {
+          "dirURL" : ".\/td[2]\/a\/@href",
+          "lastChapterTitle" : ".\/td[4]\/a\/text()",
+          "helpId" : "concat('https:\/\/www.fpzw.com',.\/td[3]\/a\/@href)"
+        },
+        "_list" : "\/\/div[@id=\"content\"]\/\/tbody\/tr",
+        "bookName" : ".\/td[2]\/a\/text()",
+        "statusText" : ".\/td[8]",
+        "lastUpdateDate" : ".\/td[7]",
+        "typeText" : [
+          ".\/td[1]",
+          "@regex:\\w+"
+        ]
+      },
+      "params" : {
+
+      },
+      "urls" : [
+        {
+          "sex" : 2,
+          "name" : "玄幻",
+          "url" : "https:\/\/www.fpzw.com\/top\/allvisit1_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "武侠",
+          "url" : "https:\/\/www.fpzw.com\/top\/allvisit2_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "都市",
+          "url" : "https:\/\/www.fpzw.com\/top\/allvisit3_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "历史",
+          "url" : "https:\/\/www.fpzw.com\/top\/allvisit4_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "网游",
+          "url" : "https:\/\/www.fpzw.com\/top\/allvisit5_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "科幻",
+          "url" : "https:\/\/www.fpzw.com\/top\/allvisit6_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "侦探",
+          "url" : "https:\/\/www.fpzw.com\/top\/allvisit7_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "同人",
+          "url" : "https:\/\/www.fpzw.com\/top\/allvisit8_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "言情",
+          "url" : "https:\/\/www.fpzw.com\/top\/allvisit9_1.html"
+        },
+        {
+          "sex" : 2,
+          "name" : "悬疑",
+          "url" : "https:\/\/www.fpzw.com\/top\/allvisit10_1.html"
+        }
+      ]
+    }
+  },
+  "httpConfigs" : {
+    "headers" : {
+
+    },
+    "customFormatValueParam" : "JxdSecuritySub.Gb2312Encoded:value",
+    "useCookies" : true
+  },
+  "chapterDetail" : {
+    "forGetMethod" : true,
+    "parser" : {
+      "content" : "\/\/p[@class=\"Text\"]\/text()"
+    },
+    "params" : {
+
+    }
+  },
+  "weight" : 1,
+  "priorityEncoding" : 4,
+  "needSupportDynTask" : true,
+  "sourceDetail" : {
+    "forGetMethod" : true,
+    "parser" : {
+      "lastChapterTitle" : "\/\/dl[@class=\"book\"]\/dd[1]\/a\/text()",
+      "_1" : {
+        "_list" : "\/\/dl[@class=\"book\"]\/\/dd[position()>3]\/a",
+        "title" : "text()",
+        "url" : "@href"
+      }
+    },
+    "params" : {
+
+    }
+  },
+  "lastModifyTime" : "2019-01-08 16:42:06",
+  "responseType" : 0,
+  "searchBook" : {
+    "nextPageParams" : {
+
+    },
+    "parser" : {
+      "author" : ".\/td[3]",
+      "_1" : {
+        "helpId" : ".\/td[1]\/a\/@href",
+        "lastUpdateDate" : ".\/td[5]",
+        "dirURL" : ".\/td[2]\/a\/@href",
+        "lastChapterTitle" : ".\/td[2]\/a\/text()"
+      },
+      "wordCount" : ".\/td[4]",
+      "_list" : "\/\/div[@id=\"content\"]\/\/tr[position()>1]",
+      "bookName" : ".\/td[1]\/a\/\/text()",
+      "statusText" : ".\/td[6]",
+      "lastUpdateDate" : ".\/td[5]"
+    },
+    "forGetMethod" : true,
+    "params" : {
+      "searchtype" : "keywords",
+      "searchkey" : "%@"
+    },
+    "nextPageForGetMedthod" : true,
+    "maxPageCount" : "100",
+    "url" : "https:\/\/www.fpzw.com\/modules\/article\/search.php",
+    "nextPageUrl" : "\/\/div[@id=\"pagelink\"]\/a[@class=\"next\"]\/@href"
+  },
+  "name" : "2k小说阅读网"
+}
