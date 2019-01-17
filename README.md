@@ -3,7 +3,11 @@
 
 ------------
 书源配置重要说明
+
 ------------
+
+
+
 
 你需要先安装爱阅书香，[下载地址](https://itunes.apple.com/cn/app/e7-88-b1-e9-98-85-e4-b9-a6-e9-a6-99/id1137819437?mt=8)
 然后用iOS设备打开此[书源配置的主页](https://wxdjs.github.io/iFreeTimebookConfigs/).
