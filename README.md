@@ -4,9 +4,7 @@
   <a href="ifreetime://configs/https://raw.githubusercontent.com/wxdjs/iFreeTimebookConfigs/master/%E6%9A%96%E6%89%8D%E6%96%87%E5%AD%A6%E7%BD%91-%E7%88%B1%E9%98%85%E4%B9%A6%E9%A6%99.txt">
     <img src="https://img.shields.io/badge/release-0.5.18-green.svg" />
   </a>
-   <a href="https://docs.cfw.lbyczf.com/">
-    <img src="https://img.shields.io/badge/document-chinese-blue.svg" />
-  </a>
+
 </div>
 ------------
 书源配置重要说明
