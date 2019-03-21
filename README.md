@@ -43,7 +43,8 @@
 | 16 |梧州中文网   |2019-01-01 18:45:57   |[导入](ifreetime://configs/https://raw.githubusercontent.com/wxdjs/iFreeTimebookConfigs/master/%E6%A2%A7%E5%B7%9E%E4%B8%AD%E6%96%87%E7%BD%91-%E7%88%B1%E9%98%85%E4%B9%A6%E9%A6%99.txt)   |
 | 17 |雅文小说   |2019-01-03 21:24:59   |[导入](ifreetime://configs/https://raw.githubusercontent.com/wxdjs/iFreeTimebookConfigs/master/%E9%9B%85%E6%96%87%E5%B0%8F%E8%AF%B4-%E7%88%B1%E9%98%85%E4%B9%A6%E9%A6%99.txt)   |
 | 18 |顶点小说   |2019-01-03 21:24:59   |[导入](ifreetime://configs/https://raw.githubusercontent.com/wxdjs/iFreeTimebookConfigs/master/%E9%A1%B6%E7%82%B9%E5%B0%8F%E8%AF%B4-%E7%88%B1%E9%98%85%E4%B9%A6%E9%A6%99.txt)   |
+| 18 |顶点小说   |2019-01-03 21:24:59   |[导入](ifreetime://configs/https://raw.githubusercontent.com/wxdjs/iFreeTimebookConfigs/master/%E9%A1%B6%E7%82%B9%E5%B0%8F%E8%AF%B4-%E7%88%B1%E9%98%85%E4%B9%A6%E9%A6%99.txt)   |
 | 19 |玫瑰小说网   |2019-03-21 19:34:59   |[导入]
-(ifreetime://configs/https://github.com/wxdjs/iFreeTimebookConfigs/raw/master/%E7%8E%AB%E7%91%B0%E5%B0%8F%E8%AF%B4%E7%BD%91.json)   |
+(ifreetime://configs/)   |
 | 结束 |以上单体书源合集 |           |[一键导入](ifreetime://configs/https://raw.githubusercontent.com/wxdjs/iFreeTimebookConfigs/master/configs.json)   |
 
