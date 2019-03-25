@@ -1,4 +1,4 @@
-# 爱阅书香书源 （更新于2019年3月21日）
+# 爱阅书香书源 （更新于2019年3月25日）
 个人兴趣制作，爱阅书香书源
 ------------
 书源配置重要说明
@@ -45,5 +45,5 @@
 | 18 |顶点小说   |2019-01-03 21:24:59   |[导入](ifreetime://configs/https://raw.githubusercontent.com/wxdjs/iFreeTimebookConfigs/master/%E9%A1%B6%E7%82%B9%E5%B0%8F%E8%AF%B4-%E7%88%B1%E9%98%85%E4%B9%A6%E9%A6%99.txt)   |
 | 18 |顶点小说   |2019-01-03 21:24:59   |[导入](ifreetime://configs/https://raw.githubusercontent.com/wxdjs/iFreeTimebookConfigs/master/%E9%A1%B6%E7%82%B9%E5%B0%8F%E8%AF%B4-%E7%88%B1%E9%98%85%E4%B9%A6%E9%A6%99.txt)   |
 | 19 |玫瑰小说网   |2019-03-21 19:34:59   |[导入](ifreetime://configs/https://raw.githubusercontent.com/wxdjs/iFreeTimebookConfigs/master/%E7%8E%AB%E7%91%B0%E5%B0%8F%E8%AF%B4%E7%BD%91.json)   |
+| 20 |爱下电子书   |2019-03-25 17:22:59   |[导入](ifreetime://configs/https://raw.githubusercontent.com/wxdjs/iFreeTimebookConfigs/master/%E7%88%B1%E4%B8%8B%E7%94%B5%E5%AD%90%E4%B9%A6.json)   |
 | 结束 |以上单体书源合集 |           |[一键导入](ifreetime://configs/https://raw.githubusercontent.com/wxdjs/iFreeTimebookConfigs/master/configs.json)   |
-
